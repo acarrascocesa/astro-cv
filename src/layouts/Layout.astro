@@ -58,6 +58,10 @@ const { frontmatter } = Astro.props;
       </div><br>
 
     <!-- End Left Column -->
+    <div class="w3-container w3-card w3-white">
+      <Title text="Education" icon="fa-certificate" />
+      <Education lists={frontmatter.educations}/>
+    </div>
     </div>
 
     <!-- Right Column -->
@@ -68,10 +72,7 @@ const { frontmatter } = Astro.props;
         <Experience lists={frontmatter.experiences}/>
       </div>
 
-      <div class="w3-container w3-card w3-white">
-        <Title text="Education" icon="fa-certificate" />
-        <Education lists={frontmatter.educations}/>
-      </div>
+     
 
     <!-- End Right Column -->
     </div>
